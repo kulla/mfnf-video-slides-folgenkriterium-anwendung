@@ -1,8 +1,9 @@
 \documentclass[aspectratio=169,xcolor={dvipsnames,svgnames,table}]{beamer}
 
 \usepackage{centernot}
+\usepackage[utf8]{inputenc}
 \beamertemplatenavigationsymbolsempty
-\title{}
+\title{Anwendung des Folgenkriteriums}
 \date{}
 
 \newcommand*{\N}{\mathbb N}
@@ -17,6 +18,25 @@
   \end{frame}
 
   \begin{frame}
-    \frametitle{}
+    \frametitle{Aufgabe}
+
+    Berechne $\lim_{n\to\infty} \left(1+\frac 1n \right)^2$
+  \end{frame}
+
+  \begin{frame}
+    \frametitle{Lösung}
+
+    \begin{align*}
+      \uncover<1->{& \lim_{n\to\infty} \left(1+\frac 1n\right)^2} \\[0.3em]
+      \uncover<2->{&{\color{Gray}\left\downarrow\ \text{Quadratfunktion ist stetig}\right.}} \\[0.3em]
+      \uncover<3->{=\ & \left(\lim_{n\to\infty} \left(1+\frac 1n\right)\right)^2} \\[0.3em]
+      \uncover<4->{&{\color{Gray}\left\downarrow\ \lim_{n\to\infty} \left( a_n+ b_n \right) = \lim_{n\to\infty} a_n+ \lim_{n\to\infty} b_n\right.}} \\[0.3em]
+      \uncover<5->{=\ &\left( \lim_{n\to\infty} 1 + \lim_{n \to \infty} \frac 1n \right)^2} \\[0.3em]
+      \uncover<6->{=\ & (1+0)^2 = 1}
+    \end{align*}
+  \end{frame}
+
+  \begin{frame}
+
   \end{frame}
 \end{document}
